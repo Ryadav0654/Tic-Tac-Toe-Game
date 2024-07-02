@@ -32,7 +32,7 @@ function Board() {
   }
 
   return (
-    <div>
+    <div >
       <div className="my-5 w-full">
         <h1 className="text-3xl font-extrabold text-center">{status}</h1>
       </div>
