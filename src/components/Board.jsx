@@ -17,7 +17,7 @@ function Board() {
     setxIsNext(!xIsNext);
   };
 
-  const btnHandle = () =>{
+  const resetHandle = () =>{
     setSquares(Array(9).fill(null));
     setxIsNext(true);
   }
@@ -52,7 +52,7 @@ function Board() {
         <Square value={squares[7]} onSquareClick={() => handleClick(7)} />
         <Square value={squares[8]} onSquareClick={() => handleClick(8)} />
       </div>
-      <button type="button" class="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl dark:focus:ring-green-800 font-medium rounded-lg text-xl px-5 py-2.5 text-center my-5"onClick={btnHandle}>Let's play</button>
+      <button type="button" class="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl dark:focus:ring-green-800 font-medium rounded-lg text-xl px-5 py-2.5 text-center my-5"onClick={resetHandle}>Let's play</button>
       </div>
       
     </div>
